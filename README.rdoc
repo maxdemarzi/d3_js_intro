@@ -4,7 +4,7 @@ An very basic introduction to using {D3.js}[http://mbostock.github.com/d3/] to d
 
 === How To
 
-Follow along on {Graph Visualization and Neo4j - Part Three}[http://wp.me/p26jdv-76]
+Follow along on {Graph Visualization and Neo4j - Part Three}[http://wp.me/p26jdv-4k]
 
   git clone git@github.com:maxdemarzi/d3_js_intro.git
   cd d3_js_intro
