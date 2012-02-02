@@ -13,7 +13,7 @@ Follow along on {Graph Visualization and Neo4j - Part Three}[http://wp.me/p26jdv
   
 Then visit http://localhost:9292/neochord.html to see the examples.
 
-See an example running on heroku at {http://simple-sunset-2036.herokuapp.com/helloworld.html}[http://simple-sunset-2036.herokuapp.com/helloworld.html]
+See an example running on heroku at {http://morning-sunset-4428.herokuapp.com}[http://morning-sunset-4428.herokuapp.com]
 
 === Links
 
