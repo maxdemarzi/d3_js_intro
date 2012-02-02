@@ -1,0 +1,24 @@
+=== Description
+
+An very basic introduction to {processing.js}[http://processingjs.org/] 
+
+to help developers who want to use {neovigator}[https://github.com/maxdemarzi/neovigator] to navigate a Neo4j graph via its {REST API}[http://components.neo4j.org/neo4j-server/milestone/rest.html].
+
+=== How To
+
+Follow along on {Graph Visualization and Neo4j - Part Two}[http://wp.me/p26jdv-76]
+
+  git clone git@github.com:maxdemarzi/processing_js_intro.git
+  cd processing_js_intro
+  bundle install
+  rackup
+  
+Then visit http://localhost:9292/helloworld.html to see the examples.
+
+See an example running on heroku at {http://simple-sunset-2036.herokuapp.com/helloworld.html}[http://simple-sunset-2036.herokuapp.com/helloworld.html]
+
+=== Links
+
+* {Neo4j Community}[http://neo4j.org]
+* {Processing.js}[http://processingjs.org]
+* {Max De Marzi}[http://maxdemarzi.com]
