@@ -18,7 +18,19 @@ var svg = d3.select("body").append("svg")
   .append("g")
     .attr("transform", "translate(" + r1 + "," + r1 + ")");
 
-d3.json("follows", function(follows) {
+/** Returns an event handler for fading a given chord group. */
+function fade(opacity) {
+  return function(g, i) {
+    svg.selectAll("g path.chord")
+        .filter(function(d) {
+          return d.source.index != i && d.target.index != i;
+        })
+      .transition()
+        .style("opacity", opacity);
+  };
+}
+  
+function draw(follows) {
   var indexByName = {},
       nameByIndex = {},
       matrix = [],
@@ -58,8 +70,11 @@ d3.json("follows", function(follows) {
   g.append("path")
       .style("fill", function(d) { return fill(d.index); })
       .style("stroke", function(d) { return fill(d.index); })
-      .attr("d", arc);
-
+      .attr("d", arc)
+      .on("mouseover", fade(.1))
+      .on("mouseout", fade(1));
+      
+  
   g.append("text")
       .each(function(d) { d.angle = (d.startAngle + d.endAngle) / 2; })
       .attr("dy", ".35em")
@@ -79,4 +94,6 @@ d3.json("follows", function(follows) {
       .style("fill", function(d) { return fill(d.source.index); })
       .attr("d", d3.svg.chord().radius(r0));
 
-});
+}
+
+d3.json("follows",draw);
