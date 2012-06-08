@@ -32,5 +32,5 @@ def follower_matrix
 end  
 
 get '/follows' do
-  follower_matrix.map{|fm| {"name" => fm[0], "follows" => fm[1][1..(fm[1].size - 2)].split(", ")} }.to_json
+  follower_matrix.map{|fm| {"name" => fm[0], "follows" => fm[1][1..(fm[1].size - 2)]} }.to_json
 end
