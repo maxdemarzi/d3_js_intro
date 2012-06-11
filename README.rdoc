@@ -9,11 +9,19 @@ Follow along on {Graph Visualization and Neo4j - Part Three}[http://wp.me/p26jdv
   git clone git@github.com:maxdemarzi/d3_js_intro.git
   cd d3_js_intro
   bundle install
+  rake neo4j:install
+  rake neo4j:start
+  rake neo4j:create
   rackup
   
 Then visit http://localhost:9292/index.html to see the examples.
 
 See an example running on heroku at {http://morning-sunset-4428.herokuapp.com/index.html}[http://morning-sunset-4428.herokuapp.com/index.html]
+
+=== Requirements
+
+* Ruby 1.9.2+
+* Neo4j 1.7
 
 === Links
 
