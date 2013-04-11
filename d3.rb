@@ -5,7 +5,7 @@ require 'uri'
 
 def create_graph
   neo = Neography::Rest.new
-  graph_exists = neo.get_node_properties(1)
+  graph_exists = neo.get_node_properties(0)
   return if graph_exists && graph_exists['name']
 
   names = %w[Max Agam Lester Musannif Adel Andrey Ryan James Bruce Tim Pinaki Mark Peter Anne Helene Corey Ben Rob Pramod Prasanna]
